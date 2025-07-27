@@ -1,20 +1,21 @@
-
-                        <!DOCTYPE html>
-                        <html lang="en">
-                        <head>
-                            <meta charset="UTF-8">
-                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-              <style>
-                body {
-                  background-color: white; /* Ensure the iframe has a white background */
-                }
-    
-                
-              </style>
-                        </head>
-                        <body>
-                            <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background-color: white;
+      /* Ensure the iframe has a white background */
+    }
+  </style>
+</head>
+
+<body>
+  <!DOCTYPE html>
+  <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -28,32 +29,38 @@
           Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
           sans-serif;
       }
+
       body {
         background-color: #fafafa;
         color: #333;
         line-height: 1.6;
       }
+
       .container {
         max-width: 1200px;
         margin: 0 auto;
         padding: 40px 20px;
       }
+
       header {
         text-align: center;
         margin-bottom: 40px;
       }
+
       .logo {
         font-size: 2.5rem;
         font-weight: 700;
         margin-bottom: 10px;
         color: #6366f1;
       }
+
       .tagline {
         font-size: 1.2rem;
         color: #666;
         max-width: 600px;
         margin: 0 auto;
       }
+
       .controls {
         display: flex;
         justify-content: center;
@@ -62,11 +69,13 @@
         margin: 30px 0;
         flex-wrap: wrap;
       }
+
       .style-selector {
         display: flex;
         gap: 10px;
         flex-wrap: wrap;
       }
+
       .style-btn {
         background: #f1f5f9;
         border: none;
@@ -77,19 +86,23 @@
         cursor: pointer;
         transition: all 0.2s ease;
       }
+
       .style-btn:hover {
         background: #e2e8f0;
       }
+
       .style-btn.active {
         background: #6366f1;
         color: white;
       }
+
       .icons-container {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
         gap: 25px;
         margin-top: 30px;
       }
+
       .icon-item {
         background: white;
         border-radius: 12px;
@@ -102,10 +115,12 @@
         position: relative;
         cursor: pointer;
       }
+
       .icon-item:hover {
         transform: translateY(-3px);
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
       }
+
       .icon-preview {
         width: 50px;
         height: 50px;
@@ -114,17 +129,20 @@
         align-items: center;
         justify-content: center;
       }
+
       .icon-preview img {
         width: 100%;
         height: 100%;
         object-fit: contain;
       }
+
       .icon-name {
         font-size: 0.8rem;
         color: #444;
         text-align: center;
         word-break: break-word;
       }
+
       .download-btn {
         position: absolute;
         top: 10px;
@@ -143,13 +161,16 @@
         opacity: 0;
         transition: opacity 0.2s ease;
       }
+
       .icon-item:hover .download-btn {
         opacity: 1;
       }
+
       .download-btn:hover {
         background: #4f46e5;
         transform: scale(1.1);
       }
+
       .download-section {
         text-align: center;
         padding: 60px 0;
@@ -158,10 +179,12 @@
         color: white;
         margin: 60px 0;
       }
+
       .download-title {
         font-size: 2rem;
         margin-bottom: 20px;
       }
+
       .download-button {
         background: white;
         color: #6366f1;
@@ -173,16 +196,19 @@
         cursor: pointer;
         transition: transform 0.2s ease, box-shadow 0.2s ease;
       }
+
       .download-button:hover {
         transform: translateY(-2px);
         box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
       }
+
       footer {
         text-align: center;
         padding: 30px 0;
         color: #666;
         font-size: 0.9rem;
       }
+
       /* Designer Section */
       .designer-section {
         text-align: center;
@@ -191,17 +217,20 @@
         border-radius: 16px;
         margin: 40px 0;
       }
+
       .designer-title {
         font-size: 1.5rem;
         margin-bottom: 20px;
         color: #334155;
       }
+
       .designer-links {
         display: flex;
         justify-content: center;
         gap: 20px;
         flex-wrap: wrap;
       }
+
       .designer-link {
         display: inline-flex;
         align-items: center;
@@ -215,10 +244,12 @@
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
         transition: transform 0.2s ease, box-shadow 0.2s ease;
       }
+
       .designer-link:hover {
         transform: translateY(-3px);
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
       }
+
       /* Modal Styles */
       .modal {
         display: none;
@@ -232,6 +263,7 @@
         align-items: center;
         justify-content: center;
       }
+
       .modal-content {
         background: white;
         border-radius: 20px;
@@ -242,6 +274,7 @@
         position: relative;
         box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
       }
+
       .close-modal {
         position: absolute;
         top: 20px;
@@ -252,21 +285,25 @@
         background: none;
         border: none;
       }
+
       .modal-icon {
         width: 120px;
         height: 120px;
         margin: 0 auto 20px;
       }
+
       .modal-icon img {
         width: 100%;
         height: 100%;
         object-fit: contain;
       }
+
       .modal-icon-name {
         font-size: 1.5rem;
         margin-bottom: 20px;
         color: #333;
       }
+
       .modal-download-btn {
         background: #6366f1;
         color: white;
@@ -278,24 +315,30 @@
         cursor: pointer;
         transition: background 0.2s ease;
       }
+
       .modal-download-btn:hover {
         background: #4f46e5;
       }
+
       @media (max-width: 768px) {
         .icons-container {
           grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
           gap: 15px;
         }
+
         .icon-item {
           padding: 15px;
         }
+
         .container {
           padding: 20px 15px;
         }
+
         .controls {
           flex-direction: column;
           gap: 15px;
         }
+
         .designer-links {
           flex-direction: column;
           align-items: center;
@@ -303,6 +346,7 @@
       }
     </style>
   </head>
+
   <body>
     <div class="container">
       <header>
@@ -328,60 +372,64 @@
       <div class="icons-container" id="icons-container">
         <!-- Icons will be loaded here dynamically -->
       </div>
-      
+
       <div class="download-section">
         <h2 class="download-title">Get Popo Icon Pack</h2>
-        <p
-          style="
+        <p style="
             margin-bottom: 30px;
             max-width: 600px;
             margin-left: auto;
             margin-right: auto;
-          "
-        >
+          ">
           Download all 1000+ SVG icons in 7 different styles
         </p>
         <button class="download-button" id="download-all-btn">Download Now</button>
       </div>
-      
+
       <div class="designer-section">
         <h2 class="designer-title">Designed by Mohammad Zafari</h2>
         <div class="designer-links">
           <a href="https://www.linkedin.com/in/mohammad-zafari1380" target="_blank" class="designer-link">
             <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
-              <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+              <path
+                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
             </svg>
             LinkedIn
           </a>
           <a href="https://www.behance.net/mohammad_zafari1380" target="_blank" class="designer-link">
             <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
-              <path d="M0 0v16h16V0H0zm10.7 12.3c-.1.1-.3.2-.5.2h-1.6c-.2 0-.4-.1-.5-.2l-.2-.5-.2-.5c-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.......
+              <path
+                d="M0 0v16h16V0H0zm10.7 12.3c-.1.1-.3.2-.5.2h-1.6c-.2 0-.4-.1-.5-.2l-.2-.5-.2-.5c-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6-.1-.2" />
             </svg>
             Behance
           </a>
           <a href="https://dribbble.com/mohammad_zafari1380" target="_blank" class="designer-link">
             <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
-              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+              <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
             </svg>
             Dribbble
           </a>
           <a href="https://www.instagram.com/mohammad_zafari1380" target="_blank" class="designer-link">
             <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
-              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42c-.526.204-.973.478-1.382.887-.41.41-.683.857-.887 1.382-.198.51-.333 1.091-.372 1.944C.01 5.829 0 6.102 0 8.271s.01 2.443.048 3.296c.04.853.174 1.434.372 1.944.204.526.478.973.887 1.382.41.41.857.683 1.382.887.51.198 1.091.333 1.944.372.853.04 1.126.048 3.296.048s2.443-.01 3.296-.048c.853-.04 1.434-.174 1.944-.372.526-.204.973-.478 1.382-.887.41-.41.683-.857.887-1.382.198-.51.333-1.091.372-1.944.04-1.171.048-1.444.048-3.613s-.01-2.443-.048-3.296c-.04-.853-.174-1.434-.372-1.944-.204-.526-.478-.973-.887-1.382-.41-.41-.857-.683-1.382-.887-.51-.198-1.091-.333-1.944-.372C10.443.01 10.17 0 8 0zm0 1.581c2.151 0 2.413.009 3.266.048.79.036 1.223.166 1.508.277.38.149.697.324 1.005.632.308.308.484.625.632 1.005.111.285.241.718.277 1.508.039.853.048 1.115.048 3.266s-.01 2.413-.048 3.266c-.036.79-.166 1.223-.277 1.508-.149.38-.324.697-.632 1.005-.308.308-.625.484-1.005.632-.285.111-.718.241-1.508.277-.853.039-1.115.048-3.266.048s-2.413-.01-3.266-.048c-.79-.036-1.223-.166-1.508-.277-.38-.149-.697-.324-1.005-.632-.308-.308-.484-.625-.632-1.005-.111-.285-.241-.718-.277-1.508-.039-.853-.048-1.115-.048-3.266s.01-2.413.048-3.266c.036-.79.166-1.223.277-1.508.149-.38.324-.697.632-1.005.308-.308.625-.484 1.005-.632.285-.111.718-.241 1.508-.277.853-.039 1.115-.048 3.266-.048z"/>
-              <path d="M8 3.978c-2.455 0-4.422 1.967-4.422 4.422s1.967 4.422 4.422 4.422 4.422-1.967 4.422-4.422S10.455 3.978 8 3.978zm0 7.156c-1.511 0-2.734-1.223-2.734-2.734S6.489 5.666 8 5.666s2.734 1.223 2.734 2.734-1.223 2.734-2.734 2.734z"/>
-              <circle cx="12.265" cy="3.735" r="1.048"/>
+              <path
+                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42c-.526.204-.973.478-1.382.887-.41.41-.683.857-.887 1.382-.198.51-.333 1.091-.372 1.944C.01 5.829 0 6.102 0 8.271s.01 2.443.048 3.296c.04.853.174 1.434.372 1.944.204.526.478.973.887 1.382.41.41.857.683 1.382.887.51.198 1.091.333 1.944.372.853.04 1.126.048 3.296.048s2.443-.01 3.296-.048c.853-.04 1.434-.174 1.944-.372.526-.204.973-.478 1.382-.887.41-.41.683-.857.887-1.382.198-.51.333-1.091.372-1.944.04-1.171.048-1.444.048-3.613s-.01-2.443-.048-3.296c-.04-.853-.174-1.434-.372-1.944-.204-.526-.478-.973-.887-1.382-.41-.41-.857-.683-1.382-.887-.51-.198-1.091-.333-1.944-.372C10.443.01 10.17 0 8 0zm0 1.581c2.151 0 2.413.009 3.266.048.79.036 1.223.166 1.508.277.38.149.697.324 1.005.632.308.308.484.625.632 1.005.111.285.241.718.277 1.508.039.853.048 1.115.048 3.266s-.01 2.413-.048 3.266c-.036.79-.166 1.223-.277 1.508-.149.38-.324.697-.632 1.005-.308.308-.625.484-1.005.632-.285.111-.718.241-1.508.277-.853.039-1.115.048-3.266.048s-2.413-.01-3.266-.048c-.79-.036-1.223-.166-1.508-.277-.38-.149-.697-.324-1.005-.632-.308-.308-.484-.625-.632-1.005-.111-.285-.241-.718-.277-1.508-.039-.853-.048-1.115-.048-3.266s.01-2.413.048-3.266c.036-.79.166-1.223.277-1.508.149-.38.324-.697.632-1.005.308-.308.625-.484 1.005-.632.285-.111.718-.241 1.508-.277.853-.039 1.115-.048 3.266-.048z" />
+              <path
+                d="M8 3.978c-2.455 0-4.422 1.967-4.422 4.422s1.967 4.422 4.422 4.422 4.422-1.967 4.422-4.422S10.455 3.978 8 3.978zm0 7.156c-1.511 0-2.734-1.223-2.734-2.734S6.489 5.666 8 5.666s2.734 1.223 2.734 2.734-1.223 2.734-2.734 2.734z" />
+              <circle cx="12.265" cy="3.735" r="1.048" />
             </svg>
             Instagram
           </a>
           <a href="mailto:mohammadzafari16191380@gmail.com" class="designer-link">
             <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
-              <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+              <path
+                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
             </svg>
             Email
           </a>
         </div>
       </div>
-      
+
       <footer>
         <p>© 2025 Popo Icon Pack. All rights reserved.</p>
       </footer>
@@ -664,7 +712,7 @@
       ];
       // Current active style
       let currentStyle = "outline";
-      
+
       // Function to render icons
       function renderIcons(style) {
         const container = document.getElementById("icons-container");
@@ -688,7 +736,7 @@
           container.appendChild(iconItem);
         });
       }
-      
+
       // Function to show modal
       function showModal(iconName, iconPath) {
         document.getElementById("modal-icon-img").src = iconPath;
@@ -699,7 +747,7 @@
           };
         document.getElementById("icon-modal").style.display = "flex";
       }
-      
+
       // Function to download icon
       function downloadIcon(iconPath, iconName) {
         // Create a temporary link element
@@ -709,16 +757,16 @@
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
-        
+
         // Close modal after download
         document.getElementById("icon-modal").style.display = "none";
       }
-      
+
       // Function to download all icons (ZIP file)
       function downloadAllIcons() {
         // Replace with your actual ZIP file URL
-        const zipUrl = "https://example.com/path/to/popo-icons.zip"; 
-        
+        const zipUrl = "https://example.com/path/to/popo-icons.zip";
+
         // Create a temporary link element
         const link = document.createElement('a');
         link.href = zipUrl;
@@ -727,12 +775,12 @@
         link.click();
         document.body.removeChild(link);
       }
-      
+
       // Initialize the page
       document.addEventListener("DOMContentLoaded", function () {
         // Render initial icons
         renderIcons(currentStyle);
-        
+
         // Add event listeners to style buttons
         const styleButtons = document.querySelectorAll(".style-btn");
         styleButtons.forEach((button) => {
@@ -746,10 +794,10 @@
             renderIcons(currentStyle);
           });
         });
-        
+
         // Add event listener to download all button
         document.getElementById("download-all-btn").addEventListener("click", downloadAllIcons);
-        
+
         // Add event listener to icons for modal
         document
           .getElementById("icons-container")
@@ -761,7 +809,7 @@
               showModal(iconName, iconPath);
             }
           });
-          
+
         // Add event listener to download buttons
         document
           .getElementById("icons-container")
@@ -774,14 +822,14 @@
               e.stopPropagation();
             }
           });
-          
+
         // Modal close functionality
         document
           .querySelector(".close-modal")
           .addEventListener("click", function () {
             document.getElementById("icon-modal").style.display = "none";
           });
-          
+
         // Close modal when clicking outside
         document
           .getElementById("icon-modal")
@@ -793,13 +841,14 @@
       });
     </script>
   </body>
+
+  </html>
+
+
+
+  <script>
+
+  </script>
+</body>
+
 </html>
-
-
-    
-              <script>
-                              
-              </script>
-                        </body>
-                        </html>
-                    
